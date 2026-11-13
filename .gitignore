@@ -1,0 +1,40 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Spark output and local runtime data
+Ingestion/bronze/
+Ingestion/silver/
+Ingestion/gold/
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+
+# Local datasets
+# Keep the large source files out of GitHub; document how to download them.
+datasets/*.csv
+
+# PostgreSQL and Docker local data
+postgres_data/
+*.sql
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
